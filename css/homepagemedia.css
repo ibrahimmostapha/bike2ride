@@ -1,0 +1,213 @@
+/* /////////////////////////////////media query for home page continu //////  */
+
+@media (max-width:991px) {
+
+    .principal .div1 .topleft {
+        font-size: 3vw;  /*2vw*/
+        font-weight: bold;
+      
+        position: absolute;
+        top: 25%;
+        left: 10%;
+      
+      }
+      .principal .div1 .topleft1 a {
+        font-size: 3vw;  /*2vw*/
+        font-weight: bold;
+        color: white;
+        background-color: var(--button);
+        padding: 0 5px 0 5px;
+      
+        position: absolute;
+        top: 37%;
+        left: 16%;
+      
+      }
+
+      .principal .div1 .topleft2 {
+        font-size: 1.44vw;  /*1vw*/
+        font-weight: bold;
+      
+      
+      
+        position: absolute;
+        top: 50%;
+        left: 16%;
+      
+      }
+
+      .principal .div1 .botleft {
+        font-size: 2.1vw;  /*1.8vw*/
+        font-weight: bold;
+      
+      
+      
+        position: absolute;
+        bottom: 20%;
+        left: 3%;
+      
+      }
+
+      .principal .div1 .botleft1 {
+        font-size: 2vw;  /*1.5vw*/
+        font-weight: 500;
+      
+      
+      
+        position: absolute;
+        bottom: 8%;
+        left: 4%;
+      
+      }
+      
+      /* ///////////////////////end of div 1  */
+
+      .principal .div2 {
+        font-size: 3vw;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: 1px 1px 50px var(--dark-color);
+      }
+
+       /* ///////////////////////end of div 2  */
+
+       /* ///////////////////////start div 3 carossel .  */
+       /* stat item 1 in carrosel  */
+
+       .carousel-inner .carousel-item .it1 .p1 {
+
+        position: absolute;
+        top: 15%;
+        right: 17%;
+        font-size: 3vw;
+        font-weight: bold;
+      
+      
+      
+      }
+
+      .carousel-inner .carousel-item .it1 .p2 {
+
+        position: absolute;
+        top: 27%;
+        right: 0%;
+        font-size: 1.6vw;
+        font-weight: bold;
+      
+      
+      
+      
+      }
+
+      .carousel-inner .carousel-item .it1 .p3 a {
+        font-size: 3vw;
+        font-weight: bold;
+        color: white;
+        background-color: var(--button);
+        padding: 0 5px 0 5px;
+      
+        position: absolute;
+        top: 70%;
+        right: 39%;
+      
+      }
+
+      /* start carossel item 2  */
+
+      .carousel-inner .carousel-item .it2 .p1 {
+
+        position: absolute;
+        top: 15%;
+        left: 6%;
+        font-size: 3vw;
+        font-weight: bold;
+      
+      
+      
+      }
+      .carousel-inner .carousel-item .it2 .p1  .br{
+
+    display: inline;
+      
+      
+      
+      }
+
+      .carousel-inner .carousel-item .it2 .p2 {
+
+     display: none;
+      
+      
+      
+      
+      }
+
+      .carousel-inner .carousel-item .it2 .p3 a {
+        font-size: 3vw;
+        font-weight: bold;
+        color: white;
+        background-color: var(--button);
+        padding: 0 5px 0 5px;
+      
+        position: absolute;
+        top: 60%;
+        left: 6%;
+      
+      }
+
+      
+.contNew>div {
+    background-color: white;
+    width: 45%;
+  
+    
+    padding: 2% ;
+  
+  
+  
+  
+  
+    margin: 1% 2%;
+  } 
+
+  /* ///////////////////end  */
+
+  /* start final /////////////////// */
+  .final>div {
+    background-color: white;
+    width: 90%;
+    
+  
+  
+    margin: 1%;
+  }
+
+
+
+  /* ///////////final2 ///////// */
+  .final2 div{
+    width: 50%;
+    padding: 0 0.5%;
+    padding-top:  1%;
+  }
+
+  .final22 div{
+    width: 40%;
+    height: 13rem;
+ 
+  
+
+ 
+  }
+  .final22 div img{
+    width: 85%;
+    height: 12rem;
+  
+
+ 
+  }
+ 
+    
+   }
+  
+  

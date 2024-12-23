@@ -1,0 +1,21 @@
+.title {
+    color:rgb(179, 10, 10);
+    text-align: center;
+}
+.warranty-mar {
+margin: 0px 50px 0px;
+}
+.wrnty{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.font-sizing{
+    font-size: 20px;
+}
+.txt-color{
+    color: rgb(179, 10, 10);
+}
+.image1{
+    width: 100%;
+}

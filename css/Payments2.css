@@ -1,0 +1,93 @@
+
+
+
+
+.box1{
+    max-height: 55rem !important; /*50*/
+    overflow: auto;
+    border-bottom: 1px solid rgb(201, 189, 189);
+}
+.box2 div{
+    height: 50rem ;
+    background-color: #f7f7f7;
+    border-radius: 3px ;
+    width: 95%;
+    margin: 0 auto;
+    
+   
+ 
+
+}
+
+.title1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.spanininput{
+    position: relative;
+    margin-right: 20px;
+
+ 
+ 
+}
+#forleft {
+ 
+    margin-right: 0px;
+}
+.originalInput{
+    width: 31rem;
+    height: 4rem;
+    border: 1px solid #ccc7c7;;
+    border-radius: 3px;
+
+    font-size: 13px;
+    padding-left: 8px;
+    padding-top: 8px;
+    text-transform: none;
+    margin: 10px 10px 10px 0px;
+   
+}
+.inInput{
+    position:absolute;
+    left: 15px;
+    text-transform: none;
+    bottom: 12px;
+    
+
+
+}
+#tell{
+    width: 31rem; /*25*/
+    
+}
+/* .submitInput{
+    float: right;
+ 
+    background: #f60; 
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 17px;
+    margin-right: 70px;
+} */
+
+@media (max-width:870px) {
+
+
+.originalInput{
+    width: 90%;
+}
+#tell{
+    width: 90%; 
+    
+}
+.submitInput{
+    float: left;
+    margin-right: 0px;
+  
+}
+
+}
+
+

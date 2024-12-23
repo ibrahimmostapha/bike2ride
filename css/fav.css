@@ -1,0 +1,24 @@
+table {width: 90%;
+    font-size: 13px;
+    margin: 0px auto 0px;
+}
+.tit{
+    margin:0 5% 0;
+}
+.avl{
+    width: 50px;
+}
+th {
+    background-color: rgb(179, 10, 10, 0.5);
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+td, th {border: 3px solid black;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.rb{color: rgb(179, 10, 10);
+    font-weight: bold;
+}

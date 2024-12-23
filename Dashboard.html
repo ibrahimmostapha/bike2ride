@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Super Admin Dashboard </title>
+    
+
+    <link rel="stylesheet" href="css/Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body > <!--style="width: 100%;"-->
+
+    <input type="checkbox"  id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2> <span class="fa-solid fa-bicycle" style="color:rgb(46, 25, 46);" ></span> <span>  BIKE<span style="color: rgb(179, 10, 10) ; font-weight: bold; font-size: larger; padding: 0;">2</span>Ride </span>  </h2> 
+        </div>
+        <div class="sidebar-menu" id="myActiveDiv">
+            <ul>
+                <li><button class="btn active" onclick="getinnerText('dashHome.html')">
+                        <span class="fa-solid fa-wrench"></span>
+                        <span> Dashboard</span></button>
+                </li>
+               
+                <li><button class="btn" id="nin" onclick="getinnerText('managerial1.html')">
+                        <span class="fa-solid fa-people-roof"></span>
+                        <span> Managerial</span></button> 
+                </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('ProductTools.html')">
+                    <span class="fa-solid fa-screwdriver-wrench"></span> 
+                    <span>Product Tools</span></button>
+            </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('costemer.html')">
+                        <span class="fa-solid fa-users"></span>
+                        <span> Customers</span></button>
+                </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('DReviewsUser.html')">
+                    <span class="fa-solid fa-comments"></span>
+                    <span> Reviews</span></button> 
+            </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('deliveryAdmin.html')">
+                        <span class="fa-solid fa-truck-fast"></span> 
+                        <span> Orders</span></button>
+                </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('dashbaordHProducts.html')">
+                        <span class="fa-brands fa-product-hunt"></span> 
+                        <span>Products</span></button>
+                </li>
+                <li><button class="btn" id="nin" onclick="getinnerText('Digital-info.html')">
+                        <span class="fa-brands fa-digital-ocean"></span> 
+                        <span>Digital Information</span></button>
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+
+            <h2>
+                <label for="nav-toggle">
+                    <span class="fa-solid fa-bars"> </span>
+                </label>
+
+                Dashboard
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <input type="search" placeholder="search here ..">
+
+            </div>
+
+
+            <div class="user-wrapper">
+                <!-- <img src="photo/bbbb.jpg" alt width="40px" height="40px" /> -->
+                <div>
+                    <h4>chaker yaakoub </h4>
+                    <small>Super Admin</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main>
+
+
+            <div class="cards">
+
+                <div class="card-single">
+                    <div>
+                        <h1>543</h1>
+                        <span>Customers</span>
+                    </div>
+                    <div>
+                        <span class="fa-solid fa-users"></span>
+                    </div>
+
+                </div>
+
+
+
+                <div class="card-single">
+                    <div>
+                        <h1>742</h1>
+                        <span>Product</span>
+                    </div>
+                    <div>
+                        <span class="fa-brands fa-product-hunt"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="card-single">
+                    <div>
+                        <h1>541</h1>
+                        <span>Orders</span>
+                    </div>
+                    <div>
+                        <span class="fa-solid fa-truck"></span>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="card-single">
+                    
+                
+                    <div>
+                      
+                    
+                        <h1>7826</h1> 
+                        <span>T-R/Month </span>
+                      
+                    </div>
+                   
+                    <div>
+                        <span class="fa-solid fa-euro-sign"></span>
+                    </div>
+                    
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <!-- //////////////////////////////////////////end of button fo2  -->
+            <!-- start of jadwal  -->
+
+            
+                 
+            <div class="recent-grid" style="margin: auto; width: 97%; " id="display"  >
+
+                
+                <div style="height: 100%;" > 
+                    <object type="text/html" data="dashHome.html" width="100%" height="100%"  style="overflow:auto;border:none"> 
+                    </object>
+                 </div> 
+
+            </div>
+
+
+           
+
+           
+
+
+
+
+            
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    </main>
+    </div>
+
+</body>
+<script src="javascript/Dashboard.js"></script>
+
+</html>

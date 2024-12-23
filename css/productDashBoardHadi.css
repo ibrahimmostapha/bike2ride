@@ -1,0 +1,364 @@
+/* default styling. Nothing to do with freexing first row and column */
+
+
+
+html::-webkit-scrollbar {
+  display: none;
+  /* visibility: hidden; */
+}
+
+
+main {display: flex;}
+main > * {border: 1px solid;}
+table {border-collapse: collapse; font-family: helvetica}
+td, th {border:  1px solid;
+      padding: 10px;
+      min-width: 150px;
+      background: white;
+      box-sizing: border-box;
+      text-align: center;
+}
+.table-container {
+  position: relative;
+  max-height:  400px;
+  width: 1000px;
+  overflow: scroll;
+}
+
+thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: hsl(180, 50%, 70%);
+  text-align: center;
+}
+thead th:first-child {
+  left: 0;
+  z-index: 3;
+  /* position: sticky; */
+  position: -webkit-sticky;
+  
+  
+}
+tbody td:first-child {
+  left: 0;
+  z-index: 3;
+  position: sticky;
+  
+}
+
+
+
+tfoot {
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 2;
+}
+
+tfoot td {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+/*   background: hsl(20, 50%, 70%); */
+}
+
+tfoot td:first-child {
+  z-index: 3;
+}
+
+tbody {
+  overflow: scroll;
+  height: 200px;
+}
+
+/* MAKE LEFT COLUMN FIXEZ */
+/* tr > :first-child {
+  position: -webkit-sticky;
+  position: sticky; 
+  background: hsl(180, 50%, 70%);
+  left: 0;  */
+/* } */
+/* don't do this */
+tr > :first-child {
+  box-shadow: inset 0px 1px black;
+  max-width: 20px !important;
+}
+
+.DtableImage {
+    max-height: 25px;
+    max-width: 25px;
+}
+.DtableImage:hover{
+    transform: scale(1.7);
+}
+
+.DashthSizeTable{
+    max-width: 30px !important;
+}
+
+
+
+
+
+
+
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    background-color: hsl(180, 50%, 70%);
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(8, 8, 8) transparent;
+    
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: rgb(8, 8, 8);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: hsl(180, 50%, 70%);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .CifValid{
+    color: rgb(53, 3, 190);
+    
+
+  }
+  .CifNotValid{
+    color: rgb(241, 68, 15);
+    
+  }
+  .Texttd{
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+/* DASHBOARD */
+
+canvas {
+	display: block !important; 
+	max-width: 800px !important;
+	margin: 60px auto !important;
+}
+
+
+
+
+.MaiNDiv{
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+  margin-top: 15px;
+  position: relative;
+  /* height: 300px; */
+  /* position: relative; */
+  /* flex-direction: row; */
+}
+
+.MaiNDivAdminReley{
+  /* display: none; */
+  width: 80% !important;
+  /* border: 2px solid black; */
+  margin-top: 15px;
+  height: auto;
+  /* left: 30px !important; */
+  border-radius: 4px;
+  position: relative;
+  right: 0 !important;
+  top: 100%;
+  /* height: 300px; */
+  /* position: relative; */
+  /* flex-direction: row; */
+}
+.divvA{
+  display: none;
+}
+
+
+
+.AdminReplarForm{
+  /* display: flex; */
+  /* left: 0;
+  display: flex;
+  width:100%;
+  /* height: 250PX; */
+  /* margin: 0;
+  text-indent: 2rem;
+  text-align: justify;
+  flex-direction: column;
+  right: auto; */
+  display: flex;
+  width:100%;
+  /* height: 250PX; */
+  margin: 0;
+  text-indent: 2rem;
+  text-align: justify;
+  flex-direction: column;
+
+}
+
+
+
+.ReviewMainDiv{
+  display: flex;
+  width:100%;
+  /* height: 250PX; */
+  margin: 0;
+  text-indent: 0.7rem;
+  text-align: justify;
+  flex-direction: column;
+}
+
+/* .displayButtonWindow{
+  display: flex;
+  width: 27%;
+  height: 250PX;
+  border: 2px solid black;
+  border-left: none !important;
+  right: 0px;
+
+} */
+
+.titleClassName{
+  border-bottom: 1px dashed black;
+  width: 100% !important;
+  padding: 7px;
+  color: rgb(3, 143, 143);
+  font-size: 0.8rem;
+  
+
+
+
+}
+.titleAdminClassName{
+  border-bottom: 1px dashed black;
+  border-top: 1px dashed black;
+  width: 100% !important;
+  padding: 7px;
+  color: rgb(3, 143, 143);
+  font-size: 0.8rem;
+}
+
+
+.RtextNormalStyle{
+  /* margin-top: 30px; */
+  /* margin-top: -15px; */
+  /* text-align: left; */
+  max-height: 300px;
+ padding: 5px;
+ overflow: auto;
+ font-size: 0.7rem;
+  
+}
+
+.replay{
+  position: absolute;
+  bottom: 7px;
+  right:50px;
+  background-color: #FFA500;
+  border-radius: 7px;
+  width: 100px;
+  color: #fff;
+
+  
+}
+.replay:hover{
+  
+  border:5px #FFA500;
+  width: 105px;
+
+  
+}
+.bDivh{
+  position: relative;
+  margin: 4% 1% 1% 1%;
+
+}
+
+textarea {
+  width: 98%;
+  height: 45px;
+  padding: 3px 10px;
+  padding-top: 5px !important;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  min-height: 42px;
+ 
+}
+.ADDDIVBt{
+  position: relative;
+  margin: 9% 1% 1% 1%;
+}
+@media (max-width:767px) {
+  .ADDDIVBt{
+    /* position: relative; */
+    margin: 17% 1% 1% 1% 
+  }
+  
+}
+@media (max-width:630px) {
+  .ADDDIVBt{
+    /* position: relative; */
+    margin: 20% 1% 1% 1% !important;
+  }
+  
+}

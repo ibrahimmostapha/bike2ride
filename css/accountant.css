@@ -1,0 +1,50 @@
+.txt{
+    margin: 2%;
+}
+.par{
+    font-size: 1.7rem;
+}
+.icon-links{
+    display: flex;
+    text-align: center;
+    padding: 1px;
+    justify-content: center;
+    width: 100%;
+}
+.hov :hover{
+    font-size: 2.75rem;
+
+}
+.bike{
+    font-weight: bold;
+}
+.b2{
+    font-size: larger;
+    color: rgb(180, 10, 10);
+}
+.c{
+    color: rgb(58, 56, 56);
+}
+.c :hover{
+    color: rgba(240, 10, 10, 0.5);
+}
+.icon-links div{
+    width: 15%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.lk {
+    color:  rgb(180, 10, 10);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.icn{
+    margin: 3px;
+    font-size: 3.25rem;
+    height: 10rem;
+}
+.sizo{
+    font-size: 1.25rem;
+    font-weight: normal;
+}

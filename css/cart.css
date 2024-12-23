@@ -1,0 +1,56 @@
+table {width: 90%;
+    font-size: 13px;
+    margin: 0px auto 0px;
+}
+.tit{
+    margin:0 5% 0;
+}
+.avl{
+    width: 50px;
+}
+th {
+    background-color: rgb(179, 10, 10, 0.5);
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+td, th {border: 3px solid black;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.rb{color: rgb(179, 10, 10);
+    font-weight: bold;
+}
+
+.qty{
+    background-color: rgba(179, 10, 10, 0.062);
+    border: 2px solid black;
+    width: 80px;
+    text-align: center;
+}
+.payment button{
+    background-color: rgb(59, 117, 184);
+    color: white;
+    font-weight: 500;
+    width: 100%;
+}
+.payment{
+    background-color: rgb(59, 117, 184);
+}
+.quantite{
+    width: 30px !important;
+    height: 30px;
+    text-align: center;
+    color: var(--light-color);
+    font-weight: bold;
+    font-size: smaller;
+}
+.update{
+    background-color: rgb(59, 117, 184);
+    color: white;
+    font-weight: 500;
+    width: 75px;
+    height: 30px;
+}

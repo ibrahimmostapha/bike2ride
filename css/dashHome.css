@@ -1,0 +1,103 @@
+
+body{
+    background: white;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+    overflow-wrap: break-word;
+  }
+  
+
+.flex-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 1rem;
+  
+}
+.flex-div div{
+
+    
+   
+    margin: auto;
+
+  
+}
+
+ g rect{
+    fill: rgba(240, 10, 10, 0.5);
+}
+
+path{
+    opacity: 0.9;
+}
+
+/* .flex-div div canvas{
+    
+   
+    width:100%;
+    max-width:400px ;
+    height: 400px;
+  
+  
+} */
+.flexdiv2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 1rem;
+   margin: auto;
+   text-align: center;
+  
+}
+.flexdiv2 .c1{
+    font-size: 22px;
+    font-weight: 900;
+  
+}
+.flexdiv2 .c2{
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(43, 34, 65);
+  
+}
+
+/* ///////هنا في لل recent grid  */
+/* 
+@media only screen and (max-width: 768px) {
+    .flex-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin: 1rem;
+    }
+
+} */
+
+@media only screen and (max-width: 765px) {
+    .flex-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin: 1rem;
+    }
+    .flexdiv2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        margin: 1rem;
+       margin: auto;
+      
+    }
+
+}
+
+
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_filter_list */
+
+

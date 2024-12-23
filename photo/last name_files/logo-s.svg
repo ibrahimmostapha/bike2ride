@@ -1,0 +1,29 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 501.95 501.5">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #ff5f12;
+            }
+
+            .cls-2 {
+                fill: #0079d3;
+            }
+
+            .cls-2, .cls-3 {
+                fill-rule: evenodd;
+            }
+
+            .cls-3 {
+                fill: #6d6d6d;
+            }
+        </style>
+    </defs>
+    <title>logo-s</title>
+    <circle class="cls-1" cx="511.93" cy="466.95" r="66.54" transform="translate(-347.74 -101.17) rotate(-12.11)" />
+    <g id="图层_2" data-name="图层 2">
+        <path class="cls-2" d="M542.84,720.5H482V595h60.85" transform="translate(-261.15 -219)" />
+    </g>
+    <g id="图层_3" data-name="图层 3">
+        <path class="cls-3" d="M588.54,654.08A198.61,198.61,0,0,0,711.18,470c0-109.94-89.12-199-199-199S313.08,360,313.08,470c0,82.56,49.61,152.54,121.21,182.68,0,10-.26,41.51-.26,55.91C333.66,675.73,261.15,581.32,261.15,470c0-138.61,112.37-251,251-251s251,112.37,251,251c0,112-73.43,206.95-174.79,239.2Z" transform="translate(-261.15 -219)" />
+    </g>
+</svg>

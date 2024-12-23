@@ -1,0 +1,53 @@
+.title {
+    color: rgb(179, 10, 10);
+    margin: 3%;
+}
+.calc {
+    display: flex;
+    flex-direction: row;
+}
+
+.in-calc {
+    border: 1px solid black;
+    margin: 4px 0;
+    width: 460px;
+}
+.in-out{
+    margin: auto 15px;
+}
+.font-sizing {
+    font-size: 20px;
+    margin: 3%;
+}
+
+.txt-color {
+    color: rgb(7, 79, 107);
+}
+
+.image1 {
+    width: 100%;
+}
+.iseam-img{
+    width: 460px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
+@media (max-width:975px){
+    .calc {
+        flex-direction: column;
+    }
+    .in-out{
+        margin: auto;
+    }
+}

@@ -1,0 +1,51 @@
+
+#current_date{
+    margin: 1% 0 0 1%;
+}
+.date-between{
+    text-align: center ;
+}
+.reded{
+    color: rgb(180, 10, 10);
+    font-weight: bold;
+}
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(177, 10, 10);
+    color: white;
+    width: 100px;
+    margin: 1%;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(179, 10, 10);
+    text-align: left;
+    text-shadow: 3px 3px 8px gray;
+    margin-left: 1%;
+}
+
+h4 {
+    font-size: large;
+    margin-left: 30px;
+
+}
+button:hover{text-decoration: none;
+font-weight: bold;}
+
+
+
+.back{
+    color: rgb(58, 56, 56);
+    font-size: 1.7rem;
+    margin: 2%;
+}
+.back :hover{
+    color: rgba(180, 10, 10);
+}
+
+.t2{
+    margin: 0 0 0 70%;
+}

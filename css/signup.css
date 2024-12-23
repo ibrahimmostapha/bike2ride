@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.B {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(179, 10, 10);
+    text-align: left;
+    text-shadow: 3px 3px 8px gray;
+    margin-left: 10px;
+}
+
+p1 {
+    font-size: large;
+    text-align: center;
+}
+
+.B input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: hidden;
+    background-color: white;
+    box-shadow: 10px 2px 8px gray;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+.B input:hover {
+    width: 302px;
+
+    color: black;
+    background-color: lightgray;
+}
+
+.span2 {
+    font-size: 30px;
+    color: rgb(179, 10, 10);
+}
+
+.span3 {
+    color: rgb(179, 10, 10);
+    text-align: left;
+    margin-left: 20px;
+}
+
+.span4 {
+    color: rgb(179, 10, 10);
+    font-size: large;
+}
+
+.span5 {
+    font-size: 20px;
+    color: rgb(179, 10, 10);
+}
+
+.span6 {
+    color: rgb(179, 10, 10);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.span9 {
+    color: rgb(179, 10, 10);
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.icon {
+    right: 320px;
+    align-items: center;
+    justify-content: center;
+}
+
+#b button {
+    font-size: 15px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(179, 10, 10);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    box-shadow: 3px 3px 8px black;
+    border-radius: 10px;
+}
+
+#b button:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.img1 {
+    width: 200px;
+    height: 120px;
+    margin-top: -5px;
+    margin-right: 12px;
+    animation-name: spin;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-top: 100px;
+}
+
+@keyframes spin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50px);
+    }
+}

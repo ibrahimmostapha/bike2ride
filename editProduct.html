@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ProductTools.css">
+
+    <!-- font cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/productTools.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <a href="searchEdit.html" style="font-size:15px ; font-weight: bold;">BACK <i class="fa-solid fa-left-long"> </i></a>
+
+
+
+    <div id="Bikes" class="container-fluid tab-pane active"> <br>
+        
+       <p>  Edit Product / Id = 3422</p>
+        <hr>
+
+        <p> <b> Note: </b> Be sure to enter all product information</p>
+        <p><span class="required">*</span> required</p><br>
+        <form action="searchEdit.html" method="get" id="myform" enctype="multipart/form-data" name="edit"
+            onsubmit="return submitForm(this);">
+
+
+
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-6   ">
+                        <!--     style="border-right:1px solid black ;"-->
+
+                        <div class="row">
+                            <!-- brand -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Brand<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+                                <input type="text" name="brand" required class="mem" id="meme"
+                                    placeholder="willer" value="Willer">
+                                <!-- <datalist id="brand">
+                                    <option value="Willer">
+                                    <option value="xxx">
+                                    <option value="xxa">
+                                    <option value="asd">
+                                    <option value="adfw">
+                                  </datalist> -->
+                                <!-- <p id="remq"> Required information, please fill in this field </p> -->
+
+
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <!-- title -->
+
+                            <div class="col-lg-3 col-md-3 ">
+                                <span class="title"> Title<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="title" required class="mem" value="Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt"
+                                    placeholder="Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt">
+
+
+
+                            </div>
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <!-- category: -->
+
+                            <div class="col-lg-3 col-md-3 ">
+                                <span class="title"> category<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9  col-md-9">
+
+                                <select name="category" required class="mem">
+                                    <option>City</option>
+                                    <option selected>Road</option>
+                                    <option>Mountain</option>
+                                    <option>Kids</option>
+                                    <option>...</option>
+                                    <option>,,,,</option>
+                                    <option>...</option>
+                                    <option>....</option>
+
+                                </select>
+
+
+
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <hr>
+
+
+
+                        <p> Wheel Size: </p>
+                        <!-- Wheel Size:  -->
+
+                        <div class="row">
+                            <!--small-->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Small<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9">
+                                <input type="number" name="S" required class="mem" value="20"
+                                    min="0">
+
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <!--small-->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Mediam<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="M" required class="mem" value="30"
+                                    min="0">
+
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <!--mediam -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> large<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="L" required class="mem" value="0"
+                                    min="0">
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                        <br>
+                        <hr>
+
+                        <p> colors :</p>
+
+
+
+                        <div class="row">
+                            <!-- color 1: -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> color1<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+
+                                <select name="color" required class="mem">
+                                    <option>beige</option>
+                                    <option>white</option>
+                                    <option>grey</option>
+                                    <option selected>black</option>
+                                    <option>brown</option>
+                                    <option>mole</option>
+                                    <option>blue</option>
+                                    <option>yellow</option>
+                                    <option>orange</option>
+                                    <option>pink</option>
+                                    <option>red</option>
+                                    <option>green</option>
+                                    <option>purple</option>
+                                    <option>multicolor</option>
+
+                                </select>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <!-- color 1: -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> color2 </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+
+                                <select name="color2" class="mem">
+                                    <option>beige</option>
+                                    <option>white</option>
+                                    <option selected>grey</option>
+                                    <option>black</option>
+                                    <option>brown</option>
+                                    <option>mole</option>
+                                    <option>blue</option>
+                                    <option>yellow</option>
+                                    <option>orange</option>
+                                    <option>pink</option>
+                                    <option>red</option>
+                                    <option>green</option>
+                                    <option>purple</option>
+                                    <option>multicolor</option>
+
+                                </select>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+                        <br>
+                        <hr>
+
+                        <div class="row">
+                            <!--price -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> price<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="price" required class="mem" value="830000"
+                                    min="0">
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <!--Discount -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Discount<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="Discount" required class="mem" value="10"
+                                    min="0">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+                        <hr>
+                        <div class="row">
+                            <!--point -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Earn/Points<span class="required">*</span>
+                                </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="point" required class="mem" value="2"
+                                    min="0">
+
+
+
+
+                            </div>
+                        </div> <br>
+                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-6   ">
+
+                        <div class="row">
+                            <!--description -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title">Description<span class="required">*</span>
+                                </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <textarea class="mem" rows="6" name="description"
+                                    required> The Wilier Jena Is A New Carbon Gravel Bike, Designed To Give You More Freedom Of Choice When You Go Out For A Ride. Jena Was Designed To Satisfy Any Of Your Needs, Whether It Is Performance On Dirt Roads And Single Track, Or Adventure, Exploration, And Bikepacking. Jena Is A Light, Reactive, And Easy-To-Handle Bike With Racing-Comfort Geometries, And Able To Adapt To The Multiple Uses Required Of A Gravel Bike. Jena's 60TON Monocoque Carbon Frame Comes In 5 Sizes (From XS To XL) With Geometries That Allow A High Level Of Comfort, Without Sacrificing Reactivity And Performance, Which Is Very Close To The One Of Wilier's Racing Bikes. The Head Tube, With A More Open Angle, Ensures Riding Quality And Stability Also On The Most Difficult Tracks. On The Other Hand, The Rear Triangle Was Designed To Have A More Distinct Response To Vertical Stress, Absorbing Thus Great Part Of The Vibrations Generated By The Ground Imperfections.
+                                
+                                </textarea>
+
+
+
+
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="row">
+                            <!--made in  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Made in<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="made" required class="mem" value="France"
+                                    placeholder="France">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+                        <div class="row">
+                            <!--Item Activity: in  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Activity<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="Activity" required class="mem" value="Cycling"
+                                    placeholder="Cycling">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+                        <div class="row">
+                            <!--Item Code: in  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Item/Code<span class="required">*</span>
+                                </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="code" required class="mem" value="WIL550115"
+                                    placeholder="WIL550115">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+                        <hr>
+
+                        <div class="row">
+                            <!--Gender in  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Gender<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+
+                                <label for="men">Men </label>
+                                <input type="radio" id="man" name="gender" value="M"
+                                    checked="checked"> |
+
+                                <label for="women">Women</label>
+
+                                <input type="radio" id="women" name="gender" value="W">|
+
+                                <label for="uni">Unisex</label>
+
+                                <input type="radio" id="uni" name="gender" value="uni">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+
+                        <div class="row">
+                            <!--Material  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Material<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="material" required class="mem" value="Carbon"
+                                    placeholder="Carbon">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+                        <div class="row">
+                            <!--Chain  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Chain<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="Chain" required class="mem" value="Campagnolo EKAR CN21-EK13"
+                                    placeholder="Campagnolo EKAR CN21-EK13">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+                        <div class="row">
+                            <!--Shifting System  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title"> Shifting/SyS<span class="required">*</span>
+                                </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="text" name="speed" required class="mem" value="13-Speed "
+                                    placeholder="13-Speed ">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+
+                        <div class="row">
+                            <!--Model Year:  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title">Model/Year<span class="required">*</span>
+                                </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="year" required class="mem" value="2022"
+                                    placeholder="2022" min="2000">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+
+                        <div class="row">
+                            <!--Weight :  -->
+
+                            <div class="col-lg-3 col-md-3">
+                                <span class="title">Weight<span class="required">*</span> </span>
+
+
+                            </div>
+                            <div class="col-lg-9 col-md-9 ">
+                                <input type="number" name="Weight" required class="mem" value="8400"
+                                    placeholder="8400g" min="0">
+
+
+
+
+                            </div>
+
+                        </div> <br>
+                        <hr>
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6   " style="border: 1px solid gray;">
+
+
+                    <div class="row">
+                        <!--image  :  -->
+
+                        <div class="col-lg-3 col-md-3">
+                            <p><input type="file" accept="image/*" name="image" id="file" value="photo/bik.jpg" 
+                                    onchange="loadFile(event)" style="display: none;" ></p>
+                            <p><label id="btnImage" class="title" for="file"
+                                    style="cursor: pointer;">Upload/Image<span
+                                        class="required">*</span></label></p>
+
+                                        <!-- probleme here cause the value not resp we can edit in java script  -->
+
+
+                        </div>
+                        <div class="col-lg-9 col-md-9 "> <br>
+                            <p
+                                style="margin-left: 20px;border: 1px dotted gray; width: 265px; height: 265px;">
+                                <img id="output" width="260px" src="photo/bik.jpg" />
+                            </p>
+
+
+
+
+                        </div>
+
+                    </div> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6  sub ">
+
+                    <input type="submit" class="button button1" value="Edit Product" >
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+    let loadFile = function (event) { // for the bike image 
+        let image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+
+
+
+</script>
+<!-- <script>document.edit.submit();</script> -->
+<script src="javascript/productTools.js"></script>
+<script src="sweetalert.min.js"></script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/searchProduct.css">
+
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <br>
+  <center><label><input id="search" type="text"
+        placeholder="You can search for a product to modify or remove (preferably search by ID) "></label> </center>
+  <br>
+  <p>Note: Do not delete products unless necessary. Deleting products from the data may cause some problems because they
+    are related to other output and other data.</p><br>
+  <div class="mytabb" style="overflow-x:auto;">
+    <center>
+      <table id="empTable">
+        <tr>
+          <th>Product ID</th>
+          <th>Categories</th>
+          <th>Product</th>
+
+          <th>Description</th>
+
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Edit</th>
+          <th>Remove</th>
+
+        </tr>
+
+        <tr>
+          <td>3422</td>
+
+          <td> <b>bikes </b> </td>
+
+          <td> <img src="photo/bik.jpg" alt="product"></td>
+          <td><b> Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt</b> <br>
+            <p> france </p>
+            <p> Color: Black, Grey</p>
+
+          </td>
+
+          <td>1272 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 2617 Є</span> </p>
+
+            <p> <span class="red"> Discount 10% </span> </p>
+
+            <p> <span class="red"> 2361 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>729</td>
+
+          <td> <b> helmets </b> </td>
+
+          <td> <img src="photo/nn.jpg" alt="product"></td>
+          <td><b>KASK Sintesi Bike Helmet - White</b> <br>
+            <p> germany </p>
+            <p> Color: White </p>
+
+          </td>
+
+          <td>132 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 17 Є</span> </p>
+
+            <p> <span class="red"> Discount 0% </span> </p>
+
+            <p> <span> 17 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>3239</td>
+
+          <td> <b> bottles </b> </td>
+
+          <td> <img src="photo/bo.jpg" alt="product"></td>
+          <td><b>Elite Deboyo Thermo Bottle 550ml - Silver</b> <br>
+            <p> lebanon </p>
+            <p> Color: Silver </p>
+
+          </td>
+
+          <td>12 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 11 Є</span> </p>
+
+            <p> <span class="red"> Discount 1% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+        <tr>
+          <td>1821</td>
+
+          <td> <b> gloves </b> </td>
+
+          <td> <img src="photo/gg.jpg" alt="product"></td>
+          <td><b>BBB Cycling Coldshield Reflective Winter Gloves BWG-38 - Black</b> <br>
+            <p> brazil </p>
+            <p> Color: Black </p>
+
+          </td>
+
+          <td>122 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 13 Є</span> </p>
+
+            <p> <span class="red"> Discount 7% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>3`39</td>
+
+          <td> <b> bottles </b> </td>
+
+          <td> <img src="photo/bo.jpg" alt="product"></td>
+          <td><b>Elite Deboyo Thermo Bottle 550ml - Silver</b> <br>
+            <p> lebanon </p>
+            <p> Color: Silver </p>
+
+          </td>
+
+          <td>12 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 11 Є</span> </p>
+
+            <p> <span class="red"> Discount 1% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+        <tr>
+          <td>3432</td>
+
+          <td> <b>bikes </b> </td>
+
+          <td> <img src="photo/bik.jpg" alt="product"></td>
+          <td><b> Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt</b> <br>
+            <p> france </p>
+            <p> Color: Black, Grey</p>
+
+          </td>
+
+          <td>1272 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 2617 Є</span> </p>
+
+            <p> <span class="red"> Discount 10% </span> </p>
+
+            <p> <span class="red"> 2361 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+        <tr>
+          <td>4342</td>
+
+          <td> <b>bikes </b> </td>
+
+          <td> <img src="photo/bik.jpg" alt="product"></td>
+          <td><b> Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt</b> <br>
+            <p> france </p>
+            <p> Color: Black, Grey</p>
+
+          </td>
+
+          <td>1272 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 2617 Є</span> </p>
+
+            <p> <span class="red"> Discount 10% </span> </p>
+
+            <p> <span class="red"> 2361 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>479</td>
+
+          <td> <b> helmets </b> </td>
+
+          <td> <img src="photo/nn.jpg" alt="product"></td>
+          <td><b>KASK Sintesi Bike Helmet - White</b> <br>
+            <p> germany </p>
+            <p> Color: White </p>
+
+          </td>
+
+          <td>132 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 17 Є</span> </p>
+
+            <p> <span class="red"> Discount 0% </span> </p>
+
+            <p> <span> 17 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>3359</td>
+
+          <td> <b> bottles </b> </td>
+
+          <td> <img src="photo/bo.jpg" alt="product"></td>
+          <td><b>Elite Deboyo Thermo Bottle 550ml - Silver</b> <br>
+            <p> lebanon </p>
+            <p> Color: Silver </p>
+
+          </td>
+
+          <td>12 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 11 Є</span> </p>
+
+            <p> <span class="red"> Discount 1% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+        <tr>
+          <td>8261</td>
+
+          <td> <b> gloves </b> </td>
+
+          <td> <img src="photo/gg.jpg" alt="product"></td>
+          <td><b>BBB Cycling Coldshield Reflective Winter Gloves BWG-38 - Black</b> <br>
+            <p> brazil </p>
+            <p> Color: Black </p>
+
+          </td>
+
+          <td>122 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 13 Є</span> </p>
+
+            <p> <span class="red"> Discount 7% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+        <tr>
+          <td>7339</td>
+
+          <td> <b> bottles </b> </td>
+
+          <td> <img src="photo/bo.jpg" alt="product"></td>
+          <td><b>Elite Deboyo Thermo Bottle 550ml - Silver</b> <br>
+            <p> lebanon </p>
+            <p> Color: Silver </p>
+
+          </td>
+
+          <td>12 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 11 Є</span> </p>
+
+            <p> <span class="red"> Discount 1% </span> </p>
+
+            <p> <span class="red"> 9 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+        <tr>
+          <td>3742</td>
+
+          <td> <b>bikes </b> </td>
+
+          <td> <img src="photo/bik.jpg" alt="product"></td>
+          <td><b> Wilier GARDA Disc -Ultegra -NDR38 -Carbon Road Bike - 2023- Black Red Matt</b> <br>
+            <p> france </p>
+            <p> Color: Black, Grey</p>
+
+          </td>
+
+          <td>1272 Piece</td>
+
+
+          <td>
+            <p> <span class="line"> 2617 Є</span> </p>
+
+            <p> <span class="red"> Discount 10% </span> </p>
+
+            <p> <span class="red"> 2361 Є</span> </p>
+          </td>
+
+          <td> <a href="editProduct.html">
+              <button>Edit</button>
+            </a> </td>
+
+          <td> <button class="remove" onclick="removeRow(this)">remove</button></td>
+        </tr>
+
+
+
+
+      </table>
+
+    </center>
+
+
+
+  </div>
+
+
+
+  <script>
+
+    var $rows = $("tr");
+
+    $("#search").keyup(function () {
+      var val = $.trim(this.value);
+      if (val === "")
+        $rows.show();
+      else {
+        $rows.hide();
+        $rows.has("td:contains(" + val + ")").show();
+      }
+    });
+
+  </script>
+  <!-- http://jsfiddle.net/k5hkR/ -->
+
+  <script>
+    let removeRow = (oButton) => {
+      let text = "Click OK if you are sure of your decision to delete this item";
+      if (confirm(text) == true) {
+        let empTab = document.getElementById('empTable');
+        empTab.deleteRow(oButton.parentNode.parentNode.rowIndex); // buttton -> td -> tr;
+      } else {
+        text = "You canceled!";
+      }
+
+    }
+  </script>
+</body>
+
+</html>

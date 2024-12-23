@@ -1,0 +1,7 @@
+body{text-align: center; width: 100%;margin-top: 10px;}
+    .one{background-color:rgb(179, 10, 10);; border-radius:10px;width:100px ; height: 50px;font-size: 20px;border-color: white; color: white;}
+    button{border-radius: 40px; background-color: white;border-color: white;}
+    img{width: 200;height: 160px;}
+    span{color: rgb(179, 10, 10);}
+    p1{font-size: 60px;}
+    p{font-weight: bold; font-size: 20px; display: inline-flex}

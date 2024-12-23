@@ -1,0 +1,58 @@
+button {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(177, 10, 10);
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(179, 10, 10);
+    text-align: left;
+    text-shadow: 3px 3px 8px lightgray;
+    margin-left: 10px;
+}
+
+h4 {
+    font-size: large;
+    margin-left: 30px;
+
+}
+
+button:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+.table-container {
+    position: relative;
+    max-height: 500px;
+    width: 700px;
+    overflow: scroll;
+
+}
+
+thead th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px 10px 35px;
+
+    z-index: 2;
+    background: hsl(204, 62%, 55%);
+}
+
+thead th:first-child {
+    left: 0;
+    z-index: 3;
+}
+
+tbody td {
+    padding: 10px 20px 10px 35px;
+}

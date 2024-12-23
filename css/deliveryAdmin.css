@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 260px;
+    margin: -120px;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(179, 10, 10);
+    margin-left: 20px;
+
+    text-shadow: 3px 3px 8px gray;
+   
+
+}
+
+.one {
+    margin-top:50px;
+    font-size: 18px;
+}
+
+input {
+    border-radius: 20px;
+    border-color: rgb(179, 10, 10);
+    width: 150px;
+    height: 20px;
+}
+select{border-radius: 20px;
+    border-color: rgb(179, 10, 10);
+    width: 160px;
+    height: 25px;}
+    select:hover{color:rgb(179, 10, 10) ;
+        background-color: lightgray;}
+hr {
+    width: 300px;
+}
+
+input:hover {
+
+
+    color: black;
+    background-color: lightgray;
+}
+
+.tow {
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
+}
+p1{font-weight: bold;}
+button{width: 150px;
+background-color: rgb(179, 10, 10);
+box-shadow: 3px 3px 8px gray;
+font-size: large;
+height: 10px;
+color: white;
+border-radius: 10px;
+border-color: white;
+height: 30px;
+
+}

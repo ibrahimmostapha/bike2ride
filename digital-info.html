@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital info</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="photo/favi.png">
+
+    <link rel="stylesheet" href="css/digital-info.css">
+
+</head>
+
+<body>
+    <div id="current_date">
+        <p></p>
+    </div>
+    <h1 class="titlee">Digital informations,</h1>
+    <div class="graph-box">
+        <div class="box1">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="box2">
+            <canvas id="circle"></canvas>
+        </div>
+    </div>
+    <div class="search-filter">
+        <form action="list-dig.html" id="filter">
+            <div class="choose-product">
+                <label for="p-list">Choose a category:</label>
+                <select class="slct" id="p-list" name="product-list" form="carform">
+                    <option value="All product">All categories</option>
+                    <option value="p1">Bikes</option>
+                    <option value="p2">Helments</option>
+                    <option value="p3">Bottles</option>
+                    <option value="p4">Gloves</option>
+                </select>
+            </div><br>
+            <div class="shoose-brand">
+                <label for="brand">Choose your brand:</label>
+                <input list="brands" name="brand" id="brand">
+                <datalist class="dtlst" id="brands">
+                    <option value="All brands">
+                    <option value="Cannondale">
+                    <option value="Asics">
+                    <option value="Lampagnolo">
+                    <option value="Cube">
+                    <option value="Giro">
+                    <option value="Scott">
+                    <option value="Endoura">
+                    <option value="Gorewaer">
+                </datalist>
+            </div>
+
+            <div class="date-from-to">
+                <p>Date of sale between:</p>
+                <label for="date-sell-from">form:</label>
+                <input type="date" id="datefrom" name="datefrom">
+                <label for="date-sell-to">to:</label>
+                <input type="date" id="dateto" name="dateto"><br><br>
+            </div>
+            <span>Sold quantity:</span><br>
+            <div class="wrapper">
+                <input type="radio" name="select" id="option-1">
+                <input type="radio" name="select" id="option-2">
+                  <label for="option-1" class="option option-1">
+                    <!-- <div class="dot"></div> -->
+                     <span>in ascending order</span>
+                     </label>
+                  <label for="option-2" class="option option-2">
+                    <!-- <div class="dot"></div> -->
+                     <span>in descending order</span>
+                  </label>
+               </div>
+            <!-- <div class="order">
+                <input type="radio" id="ascending" name="asc" value="ascending">
+                <label class="optn ascending" for="ascending">
+                    <spam>in ascending order</spam>
+                </label><br>
+                <input type="radio" id="descending" name="desc" value="descending">
+                <label class="optn descending" for="descending">
+                    <span>in descending order</span>
+                </label><br><br>
+            </div> -->
+
+
+            <input class="search" type="submit" value="List sales">
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="javascript/digital-info.js"></script>
+
+    <script>
+        document.getElementById("current_date").innerHTML = Date();
+    </script>
+
+</body>
+
+</html>

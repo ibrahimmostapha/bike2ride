@@ -1,0 +1,150 @@
+a{
+    text-decoration: none;
+}
+
+.Mylink div{
+    font-size: 1.5rem;
+    line-height: 1.67;
+    font-weight: bolder;
+    margin: 0 3px;
+    color: #14335e;
+    text-align: center;
+
+}
+.Mylink a {
+    color: #14335e;
+
+
+}
+.notActive{
+    background-color: #f7f7f7;
+    padding: 1%;
+    border-radius: 3px ;
+
+
+}
+.Myactive{
+    background-color: #ada8a8 !important;
+    color: white !important;
+    padding: 1%;
+    border-radius: 3px ;
+}
+.Myactive a{
+ color: white;
+}
+.continu{
+    margin-top: 15px;
+   
+}
+
+.box1{
+    height: 55rem; /*50*/
+    overflow: auto;
+    border-bottom: 1px solid rgb(201, 189, 189);
+}
+.box2 div{   /* you can change here */
+    height: 55rem;
+    background-color: #f7f7f7;
+    border-radius: 3px ;
+    width: 96%;
+    margin: 0 auto;
+    padding: 7px;
+
+    
+   
+ 
+
+}
+
+.box1::-webkit-scrollbar {
+    width: 1rem;
+   
+}
+
+.box1::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.box1::-webkit-scrollbar-thumb {
+    background: rgb(206, 198, 198);
+}
+.title1{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.hr1{
+    color: #bacde7;
+}
+
+/* start box 2  *//* start box 2  *//* start box 2  */
+
+
+.box2p1{
+    font-size: 1.9rem;
+    font-weight: bolder;
+
+  }
+  .box2p2{
+    font-size: 1.2rem;
+  }
+  .box2p3{
+    font-size: 1.3rem; color: #27a20b;
+    font-weight: 600;
+  }
+
+  .box2p4{
+    font-size: 1.4rem; 
+    font-weight: 400;
+  }
+  .box2p4 span{
+   float: right;
+   font-weight: bold;
+  }
+
+  .box2p5{
+text-align: center;
+    font-size: 1.3rem; 
+    font-weight: 600;
+  }
+
+  .box2p6{
+    text-align: center;
+  }
+
+
+  .DefaultsubmitInput{
+    width: 90%;
+    height: 5rem;
+ 
+    background: #f60; /*rgb(59, 117, 184)*/
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 17px;
+    margin-right: 70px; 
+    border: 1px solid #ccc7c7;;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+}
+
+
+
+/* start box 2  *//* start box 2  *//* start box 2  */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:870px) {
+
+
+
+
+}

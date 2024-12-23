@@ -1,0 +1,142 @@
+.continu table tr {
+    border-bottom: 1px solid rgb(231, 228, 228) !important;
+    /* box-shadow: rgba(0, 0, 0, 0.1)  0px 1px 2px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+ 
+
+  }
+  .continu table td {
+ 
+ margin-bottom: 20px;
+
+ 
+
+  }
+
+
+
+  
+
+ 
+/* 
+  .continu table tr:nth-child(even) {
+    background-color: rgb(247, 247, 247 , 0.1);
+  }
+   */
+  .continu table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px 40px;
+   
+
+ 
+    line-height: normal;
+
+ 
+  
+
+    /* this is the ultimate fix */
+  }
+
+#proImag {
+
+    width: 120px;
+    padding: 15px ;
+
+}
+.pp1{
+    font-size: larger;
+    font-weight: 600;
+}
+.pp2{
+    font-size: small;
+    font-weight: 400;
+}
+.pp3{
+    font-size: small;
+   color: #fcb913;
+   font-weight: bold;
+
+}
+.forimg{
+    width: 20%;
+}
+.tabremove{
+    width: 10%;
+    position: relative;
+}
+.tabremove button{
+  font-size: 25px;
+  color: #063757;
+  background: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2px;
+}
+
+
+
+ .pp4 input {
+    width: 20px !important;
+    height: 20px;
+  
+    text-align: center;
+
+    font-weight: bold;
+    font-size:medium;
+  
+  }
+  
+  /* .pp4 input:active{
+  
+    font-size: 25px;
+  } */
+  .pp4 input:hover{
+  
+    background-color: rgb(219, 206, 190);
+  }
+  .pp44{
+    font-weight: bold;
+    font-size: small;
+
+  }
+
+  input::-webkit-inner-spin-button {  /* for input numbere */
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .pp5{
+    float: left;
+  }
+
+ .pp5 .s1 {
+    font-size: 1.2rem;
+  }
+  
+  .pp5  .s2 {
+    font-size: calc(1rem + .2vw);;
+    color: red;
+    font-weight: bold;
+  }
+
+  .pp5  .s0 {
+    font-size: 1.3rem;
+    
+  }
+  .pp6 .s2 {
+    font-size: calc(1.2rem + .3vw);;
+    color: red;
+    font-weight: bold;
+  }
+  .pp6{
+    float: right;
+  }
+
+
+
+
+
+

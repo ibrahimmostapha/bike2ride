@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/dashHome.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="javascript/dashHome.js"></script>
+
+
+<body>
+
+    <div class="flex-div">
+        <div id="myChart1" style=" max-width:600px; height:500px; "></div>
+
+        <div id="myChart" style="width:100%; max-width:600px; height:500px;">
+        </div>
+
+
+
+    </div>
+<br>
+    <hr style="width: 80%;"> <br>
+    <div class="flexdiv2">
+
+        
+        <div>
+            <p>
+                <span class="c1">
+                    Total revenue/Today :
+
+                </span>
+                <span class="c2">
+                    3538  €
+
+                </span>  
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span class="c1">
+                    Total revenue/week :
+
+                </span>
+                <span class="c2">
+                    50892  €
+
+                </span>  
+            </p>
+        </div>
+        
+        <div>
+            <p>
+                <span class="c1">
+                    New products/week :
+
+                </span>
+                <span class="c2">
+                    45  p
+
+                </span>  
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <span class="c1">
+                    new users /week :
+
+                </span>
+                <span class="c2">
+                    57 U
+
+                </span>  
+            </p>
+        </div>
+
+       
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Contry', '€'],
+                ['Monday', 1200],
+                ['Tuesday', 1233],
+                ['Wednesday', 2342],
+                ['Thursday', 2435],
+                ['Friday', 1431],
+                ['Saturday', 1331],
+                ['Sunday', 1631]
+            ]);
+
+            var options = {
+                title: 'This week\'s sales (€) '
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('myChart1'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Product', 'q'],
+                ['Bikes', 54.8],
+                [' Helmets', 30.6],
+                ['Bottles', 22.4],
+                ['Gloves', 17.9]
+            ]);
+
+            var options = {
+                title: 'Weekly sales / categories % / Q = NB * 100',
+                is3D: true
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+</body>
+
+</html>

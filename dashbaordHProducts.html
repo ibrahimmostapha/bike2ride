@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- css link-->
+    <!-- <link rel="stylesheet" href="css/default.css"> -->
+
+    <link rel="stylesheet" href="css/productDashBoardHadi.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BootstarpLINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+    <title>ProductDashBoard</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <h3>Product Chart</h3>
+            <p style="padding-left: 10px;"></p>
+            <div class="col-sm-12 col-md-10">
+                <canvas id="bar-chart" width="700px" height="300px"></canvas>
+                <!-- <canvas id="line-chart" width="400" height="400"></canvas> -->
+            </div>
+
+
+
+            <h3> this table presents each product property</h3>
+            <p style="padding-left: 10px;"></p>
+            <div class="col-sm-12 col-md-10">
+
+                <div class="table-container">
+
+
+                    <div class="table-horizontal-container">
+                        <table class="unfixed-table">
+                            <thead>
+                                <tr>
+                                    <th class="DashthSizeTable"><i class="fa-solid fa-image"></i></th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Stock </th>
+                                    <th>Price</th>
+                                    <!-- <th>Categories</th> -->
+                                    <th>
+                                        <div class="custom-select" style="width:200px;">
+                                            <select>
+                                                <option value="0">Categories</option>
+                                                <option value="1">Bike</option>
+                                                <option value="2">Helmit</option>
+                                                <option value="3">Gloves</option>
+                                                <option value="4">Bottles</option>
+
+                                            </select>
+                                        </div>
+                                    </th>
+                                    <!-- <th>Brand</th> -->
+                                    <th>
+                                        <div class="custom-select" style="width:200px;">
+                                            <select>
+                                                <option value="0">BRAND</option>
+                                                <option value="1">Cannondale</option>
+                                                <option value="2">Asics</option>
+                                                <option value="3">Campagnolo</option>
+                                                <option value="4">Cube</option>
+                                                <option value="1">Giro</option>
+                                                <option value="2">Scott</option>
+                                                <option value="3">Endura</option>
+                                                <option value="4">GoreWear</option>
+
+                                            </select>
+                                        </div>
+                                    </th>
+                                    <th>Color</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>1234</td>
+                                    <td>Audi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 567</td>
+                                    <td>Bottles</td>
+                                    <td>Cannondale</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>1298675</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>$ 425</td>
+                                    <td>Bike</td>
+                                    <td>Cannondale</td>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\91422-10-crux-pro-dstblu-iceppya-hero-1093193.jpg">
+                                    </td>
+                                    <td>15422</td>
+                                    <td>x</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 
+                                        547
+                                    </td>
+                                    <td>Bike</td>
+                                    <td>BCube</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\2122026-tern-byb-s11-mattesilver-1062209.jpg"></td>
+                                    <td>1567892</td>
+                                    <td>y</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 765</td>
+                                    <td>Bike</td>
+                                    <td>Cube</td>
+                                    <td>Blue</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\bmc-urs-01-two-bku-yel-gry-1078911.jpg"></td>
+                                    <td>1345672</td>
+                                    <td>z</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>$ 236</td>
+                                    <td>Bike</td>
+                                    <td>Cube</td>
+                                    <td>Yellow</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\falkenjagd-aristos-rs-speedgravel-campa-super-record-eps-2022-01-1124460.jpg">
+                                    </td>
+                                    <td>435</td>
+                                    <td>hassan</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 567</td>
+                                    <td>Helmit</td>
+                                    <td>Cannondale</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\rennstahl-853-gravel-campa-ekar-1x-13-shamal-carbon-2022-01-1124083.jpg">
+                                    </td>
+                                    <td>12234</td>
+                                    <td>hassa</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 678</td>
+                                    <td>Bottles</td>
+                                    <td>Endura</td>
+                                    <td>blue</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>122</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 765</td>
+                                    <td>Helmit</td>
+                                    <td>Cube</td>
+                                    <td>Gray</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\rennstahl-853-pinion-reiserad-p1-1124081.jpg"></td>
+                                    <td>125</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 545</td>
+                                    <td>Helmit</td>
+                                    <td>Campagnolo</td>
+                                    <td>Gray</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>125</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 654</td>
+                                    <td>Helmit</td>
+                                    <td>Campagnolo</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>125</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 654</td>
+                                    <td>Gloves</td>
+                                    <td>Campagnolo</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>125</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 344</td>
+                                    <td>Bottles</td>
+                                    <td>Campagnolo</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>128</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 232</td>
+                                    <td>Gloves</td>
+                                    <td>Campagnolo</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>128</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>$ 667</td>
+                                    <td>Gloves</td>
+                                    <td>Campagnolo</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>128</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 766</td>
+                                    <td>Gloves</td>
+                                    <td>Scott</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>128</td>
+                                    <td>Hadi</td>
+                                    <td class="CifValid">Valid</td>
+                                    <td>$ 775</td>
+                                    <td>Gloves</td>
+                                    <td>Scott</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>124</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>$ 765</td>
+                                    <td>Bottles</td>
+                                    <td>Scott</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>1244</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>Column firve</td>
+                                    <td>Bottles</td>
+                                    <td>Cube</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>121</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>Column firve</td>
+                                    <td>Bottles</td>
+                                    <td>Scott</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>125</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>Column firve</td>
+                                    <td>Bottles</td>
+                                    <td>Scott</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>124</td>
+                                    <td>Hadi</td>
+                                    <td class="CifNotValid">Notvalid</td>
+                                    <td>Column firve</td>
+                                    <td>Bottles</td>
+                                    <td>Cube</td>
+                                    <td>Black</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>x</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>a</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>b</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td><b>c</b></td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>1234</td>
+                                    <td>e</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>234</td>
+                                    <td>e</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                                <tr>
+                                    <td><img class="DtableImage"
+                                            src="bike\allBikes\city\93ri1062-ghost-21-riot-enduro-fullparty-al-gry-blk-1090933.jpg">
+                                    </td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                    <td>Column</td>
+                                </tr>
+                            </tbody>
+
+                            <!-- <tfoot>
+                                <tr>
+                                    <td>Footer</td>
+                                    <td>Footer</td>
+                                    <td>Footer</td>
+                                    <td>Footer</td>
+                                    <td>Footer</td>
+                                    <td>Footer</td>
+                                    <th>Footer</th>
+                                    <th>Footer</th>
+                                </tr>
+                            </tfoot> -->
+                        </table>
+                    </div>
+                </div>
+                </object>
+                </article>
+                
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascript/hadiDashboard.js"></script>
+    <script src="javascript/jquery.js"></script>
+    
+
+
+</body>
+
+
+
+</html>
